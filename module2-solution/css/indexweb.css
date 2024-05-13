@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.section {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+@media (max-width: 991px) {
+    .section {
+        width: 50%;
+        float: none;
+    }
+
+    .section:nth-child(3) {
+        clear: both;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
